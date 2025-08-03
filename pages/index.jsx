@@ -1,7 +1,6 @@
 import Image from "next/image";
 import localFont from "next/font/local";
 import { Button } from "@/components/ui/button";
-import Header from "@/components/ui/cc/header";
 import General from "@/components/ui/cc/Cards/General";
 import GlobalMap from "@/components/ui/cc/Cards/GlobalMap";
 import { Card } from "@/components/ui/card";
