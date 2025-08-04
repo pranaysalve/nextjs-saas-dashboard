@@ -29,6 +29,7 @@ const MyLine = ({ data /* see data tab */ }) => (
     pointLabelYOffset={-12}
     enableTouchCrosshair={true}
     useMesh={true}
+     margin={{ top: 10, right: 10, bottom: 10, left: 10 }}
     // legends={[
     //   {
     //     anchor: "bottom-right",

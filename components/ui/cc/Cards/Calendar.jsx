@@ -15,10 +15,10 @@ const MyTimeRange = ({ data /* see data tab */ }) => (
     from="2018-01-01"
     to="2018-12-12"
     emptyColor="#eeeeee"
-    
     colors={["#61cdbb", "#97e3d5", "#e8c1a0", "#f47560"]}
     dayBorderWidth={2}
     dayBorderColor="#ffffff"
+    margin={{ top: 20, right: 10, bottom: 10, left: 10 }}
   />
 );
 

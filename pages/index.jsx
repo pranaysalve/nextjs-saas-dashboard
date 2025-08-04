@@ -3,13 +3,24 @@ import localFont from "next/font/local";
 import { Button } from "@/components/ui/button";
 import General from "@/components/ui/cc/Cards/General";
 import GlobalMap from "@/components/ui/cc/Cards/GlobalMap";
-import { Card } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import CalendarComp from "@/components/ui/cc/Cards/Calendar";
 import Lines from "@/components/ui/cc/Cards/Lines";
+import { TableComponent } from "@/components/ui/cc/Cards/Table";
+import GlobalGeoMap from "@/components/ui/cc/Cards/Map";
 
 export default function Home() {
   return (
     <div className="grid gap-4">
+      <div className="grid grid-cols-1/2 h-[410px] overflow-hidden">
+        <GlobalGeoMap />
+      </div>
       <div className="grid grid-cols-2 gap-4">
         <General />
         <div className="grid gap-4">
@@ -17,11 +28,20 @@ export default function Home() {
           <CalendarComp />
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 gap-4 overflow-hidden h-[410px]">
         <Lines />
-        <Lines />
-        <Lines />
+        <Card className="p-4 overflow-y-scroll rounded-[8px]">
+          <CardHeader>
+            <CardTitle>Order</CardTitle>
+            <CardDescription>Recent Orders</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <TableComponent />
+          </CardContent>
+        </Card>
+        {/* <Lines /> */}
       </div>
+  
     </div>
   );
 }

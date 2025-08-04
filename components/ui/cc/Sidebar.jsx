@@ -76,7 +76,7 @@ export default function Sidebar() {
   ];
 
   return (
-    <div className="fixed flex flex-col gap-2 w-[250px] min-w-[250px] border-r min-h-screen p-4">
+    <div className="fixed flex flex-col gap-2 w-[250px] min-w-[250px] p-4 min-h-screen border-r">
       <div>
         <UserItem />
       </div>
